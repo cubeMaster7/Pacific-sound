@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B6E65232AF0391E008CD4FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E65222AF0391E008CD4FF /* AppDelegate.swift */; };
+		7B6E65252AF0391E008CD4FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E65242AF0391E008CD4FF /* SceneDelegate.swift */; };
+		7B6E65272AF0391E008CD4FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E65262AF0391E008CD4FF /* ViewController.swift */; };
+		7B6E652A2AF0391E008CD4FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E65282AF0391E008CD4FF /* Main.storyboard */; };
+		7B6E652C2AF03921008CD4FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E652B2AF03921008CD4FF /* Assets.xcassets */; };
+		7B6E652F2AF03921008CD4FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E652D2AF03921008CD4FF /* LaunchScreen.storyboard */; };
+		7B6E653A2AF17B82008CD4FF /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E65392AF17B81008CD4FF /* RealmModel.swift */; };
+		7B6E653C2AF17BEA008CD4FF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E653B2AF17BEA008CD4FF /* RealmManager.swift */; };
+		7B6E653E2AF18361008CD4FF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E653D2AF18361008CD4FF /* CustomTableViewCell.swift */; };
+		7B6E65402AF185F5008CD4FF /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E653F2AF185F5008CD4FF /* FavoriteViewController.swift */; };
+		7B6E65422AF186F1008CD4FF /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E65412AF186F1008CD4FF /* FavoriteTableViewCell.swift */; };
+		7B6E65442AF2D2D1008CD4FF /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6E65432AF2D2D1008CD4FF /* SoundModel.swift */; };
+		7BB324922B137E8C00865A95 /* thunderstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3248B2B137E8B00865A95 /* thunderstorm.mp3 */; };
+		7BB324932B137E8C00865A95 /* heavy rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3248C2B137E8B00865A95 /* heavy rain.mp3 */; };
+		7BB324942B137E8C00865A95 /* spring rain with thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3248D2B137E8C00865A95 /* spring rain with thunder.mp3 */; };
+		7BB324952B137E8C00865A95 /* rain on an umbrella.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3248E2B137E8C00865A95 /* rain on an umbrella.mp3 */; };
+		7BB324962B137E8C00865A95 /* rain on the window.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3248F2B137E8C00865A95 /* rain on the window.mp3 */; };
+		7BB324972B137E8C00865A95 /* city rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324902B137E8C00865A95 /* city rain.mp3 */; };
+		7BB324982B137E8C00865A95 /* forest rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324912B137E8C00865A95 /* forest rain.mp3 */; };
+		7BB3249C2B138B0600865A95 /* blizzard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3249A2B138B0500865A95 /* blizzard.mp3 */; };
+		7BB3249D2B138B0600865A95 /* footsteps in the snow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3249B2B138B0600865A95 /* footsteps in the snow.mp3 */; };
+		7BB3249F2B139B9C00865A95 /* blizzard2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB3249E2B139B9C00865A95 /* blizzard2.mp3 */; };
+		7BB324A52B139C0C00865A95 /* leaves on wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324A12B139C0B00865A95 /* leaves on wind.mp3 */; };
+		7BB324A62B139C0C00865A95 /* wind in mount.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324A22B139C0B00865A95 /* wind in mount.mp3 */; };
+		7BB324A72B139C0C00865A95 /* wind on grass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324A32B139C0C00865A95 /* wind on grass.mp3 */; };
+		7BB324A82B139C0C00865A95 /* hurricane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324A42B139C0C00865A95 /* hurricane.mp3 */; };
+		7BB324AE2B139E9A00865A95 /* ocean waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324AA2B139E9900865A95 /* ocean waves.mp3 */; };
+		7BB324AF2B139E9A00865A95 /* waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324AB2B139E9900865A95 /* waterfall.mp3 */; };
+		7BB324B02B139E9A00865A95 /* rain and sea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324AC2B139E9A00865A95 /* rain and sea.mp3 */; };
+		7BB324B12B139E9A00865A95 /* waves and rocks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324AD2B139E9A00865A95 /* waves and rocks.mp3 */; };
+		7BB324B52B13A15B00865A95 /* bonfire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324B32B13A15B00865A95 /* bonfire.mp3 */; };
+		7BB324B62B13A15B00865A95 /* village.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BB324B42B13A15B00865A95 /* village.mp3 */; };
+		7BBA5B882B0A55CD005CA4A1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBA5B872B0A55CD005CA4A1 /* TimerViewController.swift */; };
+		7BECEA882B014E0D009AF17A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7BECEA872B014E0D009AF17A /* Realm */; };
+		7BECEA8A2B014E0D009AF17A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7BECEA892B014E0D009AF17A /* RealmSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B6E651F2AF0391E008CD4FF /* firstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B6E65222AF0391E008CD4FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B6E65242AF0391E008CD4FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B6E65262AF0391E008CD4FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B6E65292AF0391E008CD4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B6E652B2AF03921008CD4FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B6E652E2AF03921008CD4FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B6E65302AF03921008CD4FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B6E65392AF17B81008CD4FF /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		7B6E653B2AF17BEA008CD4FF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		7B6E653D2AF18361008CD4FF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7B6E653F2AF185F5008CD4FF /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		7B6E65412AF186F1008CD4FF /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		7B6E65432AF2D2D1008CD4FF /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		7BB3248B2B137E8B00865A95 /* thunderstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunderstorm.mp3; sourceTree = "<group>"; };
+		7BB3248C2B137E8B00865A95 /* heavy rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "heavy rain.mp3"; sourceTree = "<group>"; };
+		7BB3248D2B137E8C00865A95 /* spring rain with thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spring rain with thunder.mp3"; sourceTree = "<group>"; };
+		7BB3248E2B137E8C00865A95 /* rain on an umbrella.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain on an umbrella.mp3"; sourceTree = "<group>"; };
+		7BB3248F2B137E8C00865A95 /* rain on the window.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain on the window.mp3"; sourceTree = "<group>"; };
+		7BB324902B137E8C00865A95 /* city rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "city rain.mp3"; sourceTree = "<group>"; };
+		7BB324912B137E8C00865A95 /* forest rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "forest rain.mp3"; sourceTree = "<group>"; };
+		7BB3249A2B138B0500865A95 /* blizzard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blizzard.mp3; sourceTree = "<group>"; };
+		7BB3249B2B138B0600865A95 /* footsteps in the snow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "footsteps in the snow.mp3"; sourceTree = "<group>"; };
+		7BB3249E2B139B9C00865A95 /* blizzard2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blizzard2.mp3; sourceTree = "<group>"; };
+		7BB324A12B139C0B00865A95 /* leaves on wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "leaves on wind.mp3"; sourceTree = "<group>"; };
+		7BB324A22B139C0B00865A95 /* wind in mount.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wind in mount.mp3"; sourceTree = "<group>"; };
+		7BB324A32B139C0C00865A95 /* wind on grass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wind on grass.mp3"; sourceTree = "<group>"; };
+		7BB324A42B139C0C00865A95 /* hurricane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hurricane.mp3; sourceTree = "<group>"; };
+		7BB324AA2B139E9900865A95 /* ocean waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ocean waves.mp3"; sourceTree = "<group>"; };
+		7BB324AB2B139E9900865A95 /* waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waterfall.mp3; sourceTree = "<group>"; };
+		7BB324AC2B139E9A00865A95 /* rain and sea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "rain and sea.mp3"; sourceTree = "<group>"; };
+		7BB324AD2B139E9A00865A95 /* waves and rocks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "waves and rocks.mp3"; sourceTree = "<group>"; };
+		7BB324B32B13A15B00865A95 /* bonfire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bonfire.mp3; sourceTree = "<group>"; };
+		7BB324B42B13A15B00865A95 /* village.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = village.mp3; sourceTree = "<group>"; };
+		7BBA5B872B0A55CD005CA4A1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B6E651C2AF0391E008CD4FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BECEA8A2B014E0D009AF17A /* RealmSwift in Frameworks */,
+				7BECEA882B014E0D009AF17A /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B4153F92AF790EA006AC8D6 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E65392AF17B81008CD4FF /* RealmModel.swift */,
+				7B6E653B2AF17BEA008CD4FF /* RealmManager.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		7B4153FA2AF790FC006AC8D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E653D2AF18361008CD4FF /* CustomTableViewCell.swift */,
+				7B6E65412AF186F1008CD4FF /* FavoriteTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7B4153FB2AF79108006AC8D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E65262AF0391E008CD4FF /* ViewController.swift */,
+				7BBA5B872B0A55CD005CA4A1 /* TimerViewController.swift */,
+				7B6E653F2AF185F5008CD4FF /* FavoriteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7B4153FC2AF7910E006AC8D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E65432AF2D2D1008CD4FF /* SoundModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B4153FD2AF7922B006AC8D6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7BB324B22B13A15100865A95 /* Nature */,
+				7BB324A92B139E8D00865A95 /* water */,
+				7BB324A02B139BDF00865A95 /* Wind */,
+				7BB324992B138AF800865A95 /* Winter */,
+				7BB3248A2B137D5C00865A95 /* Rain */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7B6E65162AF0391E008CD4FF = {
+			isa = PBXGroup;
+			children = (
+				7B6E65212AF0391E008CD4FF /* firstApp */,
+				7B6E65202AF0391E008CD4FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B6E65202AF0391E008CD4FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E651F2AF0391E008CD4FF /* firstApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B6E65212AF0391E008CD4FF /* firstApp */ = {
+			isa = PBXGroup;
+			children = (
+				7B6E65222AF0391E008CD4FF /* AppDelegate.swift */,
+				7B6E65242AF0391E008CD4FF /* SceneDelegate.swift */,
+				7B4153FB2AF79108006AC8D6 /* Controllers */,
+				7B4153FA2AF790FC006AC8D6 /* Cells */,
+				7B4153FD2AF7922B006AC8D6 /* Sounds */,
+				7B4153FC2AF7910E006AC8D6 /* Model */,
+				7B4153F92AF790EA006AC8D6 /* Realm */,
+				7B6E65282AF0391E008CD4FF /* Main.storyboard */,
+				7B6E652B2AF03921008CD4FF /* Assets.xcassets */,
+				7B6E652D2AF03921008CD4FF /* LaunchScreen.storyboard */,
+				7B6E65302AF03921008CD4FF /* Info.plist */,
+			);
+			path = firstApp;
+			sourceTree = "<group>";
+		};
+		7BB3248A2B137D5C00865A95 /* Rain */ = {
+			isa = PBXGroup;
+			children = (
+				7BB324902B137E8C00865A95 /* city rain.mp3 */,
+				7BB324912B137E8C00865A95 /* forest rain.mp3 */,
+				7BB3248C2B137E8B00865A95 /* heavy rain.mp3 */,
+				7BB3248E2B137E8C00865A95 /* rain on an umbrella.mp3 */,
+				7BB3248F2B137E8C00865A95 /* rain on the window.mp3 */,
+				7BB3248D2B137E8C00865A95 /* spring rain with thunder.mp3 */,
+				7BB3248B2B137E8B00865A95 /* thunderstorm.mp3 */,
+			);
+			path = Rain;
+			sourceTree = "<group>";
+		};
+		7BB324992B138AF800865A95 /* Winter */ = {
+			isa = PBXGroup;
+			children = (
+				7BB3249A2B138B0500865A95 /* blizzard.mp3 */,
+				7BB3249B2B138B0600865A95 /* footsteps in the snow.mp3 */,
+				7BB3249E2B139B9C00865A95 /* blizzard2.mp3 */,
+			);
+			path = Winter;
+			sourceTree = "<group>";
+		};
+		7BB324A02B139BDF00865A95 /* Wind */ = {
+			isa = PBXGroup;
+			children = (
+				7BB324A42B139C0C00865A95 /* hurricane.mp3 */,
+				7BB324A12B139C0B00865A95 /* leaves on wind.mp3 */,
+				7BB324A22B139C0B00865A95 /* wind in mount.mp3 */,
+				7BB324A32B139C0C00865A95 /* wind on grass.mp3 */,
+			);
+			path = Wind;
+			sourceTree = "<group>";
+		};
+		7BB324A92B139E8D00865A95 /* water */ = {
+			isa = PBXGroup;
+			children = (
+				7BB324AA2B139E9900865A95 /* ocean waves.mp3 */,
+				7BB324AC2B139E9A00865A95 /* rain and sea.mp3 */,
+				7BB324AB2B139E9900865A95 /* waterfall.mp3 */,
+				7BB324AD2B139E9A00865A95 /* waves and rocks.mp3 */,
+			);
+			path = water;
+			sourceTree = "<group>";
+		};
+		7BB324B22B13A15100865A95 /* Nature */ = {
+			isa = PBXGroup;
+			children = (
+				7BB324B32B13A15B00865A95 /* bonfire.mp3 */,
+				7BB324B42B13A15B00865A95 /* village.mp3 */,
+			);
+			path = Nature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B6E651E2AF0391E008CD4FF /* firstApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B6E65332AF03921008CD4FF /* Build configuration list for PBXNativeTarget "firstApp" */;
+			buildPhases = (
+				7B6E651B2AF0391E008CD4FF /* Sources */,
+				7B6E651C2AF0391E008CD4FF /* Frameworks */,
+				7B6E651D2AF0391E008CD4FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = firstApp;
+			packageProductDependencies = (
+				7BECEA872B014E0D009AF17A /* Realm */,
+				7BECEA892B014E0D009AF17A /* RealmSwift */,
+			);
+			productName = firstApp;
+			productReference = 7B6E651F2AF0391E008CD4FF /* firstApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B6E65172AF0391E008CD4FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7B6E651E2AF0391E008CD4FF = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7B6E651A2AF0391E008CD4FF /* Build configuration list for PBXProject "firstApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B6E65162AF0391E008CD4FF;
+			packageReferences = (
+				7BECEA862B014E0D009AF17A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 7B6E65202AF0391E008CD4FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B6E651E2AF0391E008CD4FF /* firstApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B6E651D2AF0391E008CD4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB3249C2B138B0600865A95 /* blizzard.mp3 in Resources */,
+				7BB324AF2B139E9A00865A95 /* waterfall.mp3 in Resources */,
+				7BB324B12B139E9A00865A95 /* waves and rocks.mp3 in Resources */,
+				7BB324A62B139C0C00865A95 /* wind in mount.mp3 in Resources */,
+				7BB324A52B139C0C00865A95 /* leaves on wind.mp3 in Resources */,
+				7BB324942B137E8C00865A95 /* spring rain with thunder.mp3 in Resources */,
+				7BB324952B137E8C00865A95 /* rain on an umbrella.mp3 in Resources */,
+				7BB324922B137E8C00865A95 /* thunderstorm.mp3 in Resources */,
+				7BB324962B137E8C00865A95 /* rain on the window.mp3 in Resources */,
+				7BB324B02B139E9A00865A95 /* rain and sea.mp3 in Resources */,
+				7BB3249F2B139B9C00865A95 /* blizzard2.mp3 in Resources */,
+				7BB324B62B13A15B00865A95 /* village.mp3 in Resources */,
+				7BB324A82B139C0C00865A95 /* hurricane.mp3 in Resources */,
+				7B6E652F2AF03921008CD4FF /* LaunchScreen.storyboard in Resources */,
+				7BB324982B137E8C00865A95 /* forest rain.mp3 in Resources */,
+				7BB324932B137E8C00865A95 /* heavy rain.mp3 in Resources */,
+				7B6E652C2AF03921008CD4FF /* Assets.xcassets in Resources */,
+				7BB324B52B13A15B00865A95 /* bonfire.mp3 in Resources */,
+				7B6E652A2AF0391E008CD4FF /* Main.storyboard in Resources */,
+				7BB3249D2B138B0600865A95 /* footsteps in the snow.mp3 in Resources */,
+				7BB324A72B139C0C00865A95 /* wind on grass.mp3 in Resources */,
+				7BB324972B137E8C00865A95 /* city rain.mp3 in Resources */,
+				7BB324AE2B139E9A00865A95 /* ocean waves.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B6E651B2AF0391E008CD4FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BBA5B882B0A55CD005CA4A1 /* TimerViewController.swift in Sources */,
+				7B6E653E2AF18361008CD4FF /* CustomTableViewCell.swift in Sources */,
+				7B6E65422AF186F1008CD4FF /* FavoriteTableViewCell.swift in Sources */,
+				7B6E65272AF0391E008CD4FF /* ViewController.swift in Sources */,
+				7B6E65442AF2D2D1008CD4FF /* SoundModel.swift in Sources */,
+				7B6E653A2AF17B82008CD4FF /* RealmModel.swift in Sources */,
+				7B6E65402AF185F5008CD4FF /* FavoriteViewController.swift in Sources */,
+				7B6E653C2AF17BEA008CD4FF /* RealmManager.swift in Sources */,
+				7B6E65232AF0391E008CD4FF /* AppDelegate.swift in Sources */,
+				7B6E65252AF0391E008CD4FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B6E65282AF0391E008CD4FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B6E65292AF0391E008CD4FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B6E652D2AF03921008CD4FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B6E652E2AF03921008CD4FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B6E65312AF03921008CD4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B6E65322AF03921008CD4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B6E65342AF03921008CD4FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VY7N45S8K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = firstApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PavelChirkov.firstApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B6E65352AF03921008CD4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VY7N45S8K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = firstApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = PavelChirkov.firstApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B6E651A2AF0391E008CD4FF /* Build configuration list for PBXProject "firstApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6E65312AF03921008CD4FF /* Debug */,
+				7B6E65322AF03921008CD4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B6E65332AF03921008CD4FF /* Build configuration list for PBXNativeTarget "firstApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6E65342AF03921008CD4FF /* Debug */,
+				7B6E65352AF03921008CD4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BECEA862B014E0D009AF17A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BECEA872B014E0D009AF17A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BECEA862B014E0D009AF17A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7BECEA892B014E0D009AF17A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BECEA862B014E0D009AF17A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7B6E65172AF0391E008CD4FF /* Project object */;
+}
